@@ -1,10 +1,10 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = var.organization
+    organization = "lirik-com-ua-personal"
 
     workspaces {
-      name = var.workspace
+      name = "tf-cloud-gcp"
     }
   }
 }

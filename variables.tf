@@ -17,13 +17,3 @@ variable credentials {
     type = string
     description = "in the terraform.tfvars"
 }
-
-variable organization {
-    type = string
-    description = "in the terraform.tfvars"
-}
-
-variable workspace {
-    type = string
-    description = "in the terraform.tfvars"
-}
