@@ -1,7 +1,7 @@
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "f1-micro"
-  zone        = "europe-north1-a"
+  zone         = vars.zone
 
   boot_disk {
     initialize_params {
@@ -11,7 +11,7 @@ resource "google_compute_instance" "vm_instance" {
 
   network_interface {
     # A default network is created for all GCP projects
-    network       = "default"
+    network = "default"
     access_config {
     }
   }
